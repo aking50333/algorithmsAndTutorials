@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        function person (name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        var rub = new person("Ruben", 24);
+
+        document.write(rub.age + " " + rub.name);
+
+
+        var people = new Array();
+        people[0] = 10;
+        people[1] = 15;
+        people[2] = 20;
+
+        people.reverse();
+        document.write(people + "<br><br>");
+        people.push(25, 30, 5, 0);
+        document.write(people + "<br><br>");
+        people.sort();
+        document.write(people + "<br><br>");
+
+        document.write(people[0] + "  " + people[1] +  "  " + people[2]);
+        people.pop();
+        document.write(people[0] + "  " + people[1] +  "  " + people[2]);
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+
+<h1>THis is another part</h1>
+
+
+<script>
+    var crap  = new Array(3);
+    var sum = 0;
+
+    for(var i = 0; i < crap.length; i++){
+        crap[i] = parseInt(prompt("Type a number"));
+        sum += crap[i];
+    }
+
+
+    document.write(sum);
+
+</script>
+
+
+
+
+</body>
+</html>

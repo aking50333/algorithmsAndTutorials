@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <title>The New Boston</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#" class="btn btn-success" id="menu-toggle">Menu Toggle</a>
+                    <h1>Sidebar layout</h1>
+                    <p>This is a text. This is a text. This is a text. This is a text. This is a text. This is a text. This is a text.
+                        This is a text. This is a text. This is a text. This is a text. This is a text. This is a text. This is a text.
+                        This is a text. This is a text. This is a text. This is a text. This is a text. This is a text. This is a text.
+                        This is a text. This is a text. This is a text. This is a text. This is a text. This is a text. This is a text.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#menu-toggle").click( function(e){
+        e.preventDefault();
+        $("#wrapper").toggleClass("menuDisplayed");
+    });
+</script>
+
+
+
+</body>
+</html>
